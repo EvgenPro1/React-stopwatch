@@ -30,6 +30,7 @@ export const TimeDisplay = () => {
 
     useEffect(() => {
         intervalDispatcher(dispatch, state)
+        // eslint-disable-next-line
     }, [state.active])
 
     const minutes = state.minutes < 10 ? `0${+state.minutes}` : state.minutes
